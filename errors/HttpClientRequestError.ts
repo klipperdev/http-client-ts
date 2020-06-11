@@ -8,18 +8,19 @@
  */
 
 import {HttpClientError} from './HttpClientError';
+import {Errors} from '../models/responses/Errors';
 
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>
  */
-export class HttpClientRequestError<T extends any> extends HttpClientError {
+export class HttpClientRequestError extends HttpClientError {
     public readonly statusCode: number;
 
-    public readonly errors: Partial<T>;
+    public readonly errors: Errors;
 
     public readonly previousError: Error;
 
-    constructor(message: string, statusCode: number, errors: Partial<T>, previousError: Error) {
+    constructor(message: string, statusCode: number, errors: Errors, previousError: Error) {
         super(message);
 
         this.statusCode = statusCode;
