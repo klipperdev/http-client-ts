@@ -1,0 +1,9 @@
+{
+    "name": "@klipper/http-client",
+    "version": "1.0.0",
+    "description": "Helper for promise based HTTP client",
+    "repository": "git@github.com:klipperdev/http-client-ts.git",
+    "author": "François Pluchino <francois.pluchino@klipper.dev>",
+    "license": "MIT",
+    "private": true
+}
