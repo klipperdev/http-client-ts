@@ -7,12 +7,15 @@
  * file that was distributed with this source code.
  */
 
+import {MapKey} from './../MapKey';
+
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>
  */
-export interface ListResponse<T> {
-    results: T[];
-    count: number;
+export interface ListResponse<T = MapKey> {
+    page: number;
+    limit: number;
+    pages: number;
     total: number;
-    lastId: string | null;
+    results: T[];
 }
