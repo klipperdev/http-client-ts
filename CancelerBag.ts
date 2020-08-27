@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-import {Canceler} from './Canceler';
+import {Canceler} from '@klipper/http-client/Canceler';
 
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>

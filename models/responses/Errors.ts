@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-import {MapKey} from '../../models/MapKey';
+import {MapKey} from '@klipper/http-client/models/MapKey';
 
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>

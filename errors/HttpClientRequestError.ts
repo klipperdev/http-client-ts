@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 
-import {HttpClientError} from './HttpClientError';
-import {Errors} from '../models/responses/Errors';
+import {HttpClientError} from '@klipper/http-client/errors/HttpClientError';
+import {Errors} from '@klipper/http-client/models/responses/Errors';
 
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>
