@@ -7,12 +7,10 @@
  * file that was distributed with this source code.
  */
 
-import {MapKey} from '@klipper/http-client/models/MapKey';
-
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>
  */
-export interface ListResponse<T = MapKey> {
+export interface ListResponse<T = Record<string, any>> {
     page: number;
     limit: number;
     pages: number;

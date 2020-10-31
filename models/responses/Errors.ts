@@ -7,13 +7,10 @@
  * file that was distributed with this source code.
  */
 
-import {MapKey} from '@klipper/http-client/models/MapKey';
-
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>
  */
 export interface Errors {
     errors?: string[];
-
-    children?: MapKey<Errors>;
+    children?: Record<string, Errors>;
 }
