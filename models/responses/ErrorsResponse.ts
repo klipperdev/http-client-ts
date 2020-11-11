@@ -7,8 +7,8 @@
  * file that was distributed with this source code.
  */
 
-import {MessageResponse} from '@klipper/http-client/models/responses/MessageResponse';
 import {Errors} from '@klipper/http-client/models/responses/Errors';
+import {MessageResponse} from '@klipper/http-client/models/responses/MessageResponse';
 
 /**
  * @author François Pluchino <francois.pluchino@klipper.dev>
