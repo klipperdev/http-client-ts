@@ -17,3 +17,13 @@ export interface ListResponse<T = Record<string, any>> {
     total: number;
     results: T[];
 }
+
+export async function createEmptyListResponse(): Promise<ListResponse> {
+    return Promise.resolve({
+        limit: 0,
+        page: 1,
+        pages: 1,
+        results: [],
+        total: 0,
+    } as ListResponse);
+}
